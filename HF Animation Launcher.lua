@@ -1,3 +1,5 @@
--- Copy this small launcher into Aseprite's Scripts folder on this computer.
--- The bridge, encrypted account and Python environment stay in the project.
-dofile([[C:\Users\lien\Desktop\Gamejams\revaliaobscura\revaliaobscura\art\BlogPost-001\huggingface-variations\HF Animation.lua]])
+-- Keep the huggingface-variations folder beside this launcher.
+local source = debug.getinfo(1, 'S').source
+assert(source:sub(1, 1) == '@', 'Run this as a saved Lua script.')
+local root = app.fs.filePath(source:sub(2))
+dofile(app.fs.joinPath(root, 'huggingface-variations', 'HF Animation.lua'))

@@ -1,0 +1,11 @@
+.venv/
+accounts.local.json
+settings.local.json
+animation-settings.local.json
+lora-options.local.json
+jobs/
+__pycache__/
+.test-launch/
+aseprite-test-*.txt
+test-reference.png
+*.local.json
